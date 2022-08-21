@@ -1,0 +1,58 @@
+#faq{
+    padding:60px 0 120px 0 ;
+    .container{
+      @include Flex($flex-direction: column)
+    }
+}
+.faq-heading{
+padding-bottom: 40px;
+}
+.accordions{
+    width: 100%;
+    @include Flex($flex-direction: column)
+}
+.arrow{
+    padding: 10px;
+    font-size: 45px;
+    cursor: pointer;
+  margin-left:auto;
+}
+.question-container{
+    @include Flex ;
+ background-color: $secondaryLightColor;   
+ padding: 10px 5px;
+
+ h1{
+    font-size: $smallSize;
+    font-weight: normal;
+    padding: 20px 10px;
+    cursor: pointer;
+ }
+}
+.accordion{
+    width: 60%;
+    margin: 10px;
+    p{
+        background-color: $secondaryLightColor;
+    padding: 10px 20px;
+        font-size: $smallSize;
+        transition: all 0.1s ;
+       z-index: 1;
+    }
+}
+.hidden{
+transform: translateY(-10px);
+display: none;
+}
+.show{
+ visibility: visible;
+display: block;
+    transform: translateY(0); 
+        
+}
+@media only screen and (max-width: 800px) {
+   
+.accordion {
+        width: 100%;
+    }
+}

@@ -1,0 +1,22 @@
+@import "Globe.scss";
+@import "../Components/NavBar/Nav";
+@import "../Components/Hero/Hero";
+@import "../Components/Feature/Feature";
+@import "../Components/About/About";
+@import "../Components/Testimonial/Testimonial";
+@import "../Components/Contact/Contact";
+@import "../Components//Faq/Faq";
+@import "../Components/Footer/Footer";
+@import "../Components/Login/Login";
+@import './Loader';
+
+//* Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Krona+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+text-transform: capitalize;
+scroll-behavior: smooth;
+}

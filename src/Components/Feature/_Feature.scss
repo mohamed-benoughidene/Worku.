@@ -1,0 +1,70 @@
+#Feature{
+    margin-top: 120px;
+    .container{
+        @include Flex($flex-direction: column)
+    }
+.btn{
+    margin-top: 40px;
+    padding: 15px 40px;
+}
+}
+.heading-feature{
+    font-size: $bigSize2;
+    font-weight: 400;
+    padding: 0 130px;
+}
+.youtube-video{
+    width: 100%;
+    max-width: 1000px;
+    height: 406px;
+    padding: 0 130px;
+    min-height: 300px;
+    margin-top: 80px;
+}
+.cards {
+    margin-top: 80px;
+    @include Flex;
+   
+    
+}
+.card{
+    background-color: red;
+    margin: 5px;
+    height:100%;
+    min-width: 250px;
+    @include Flex($flex-direction: column, $align: flex-start);
+    padding: 25px;
+    background-color: $secondaryLightColor;
+}
+.heading2-feature{
+    padding-top: 10px;
+    font-size: mediumSize;
+}
+.feature-paragraph{
+   padding-top: 15px;
+    font-size: $smallSize;
+    font-size: $superSmallSize;
+}
+.black{
+    background-color: $secondaryDarkColor;
+    color: $textColorLight;
+}
+.gray {
+    color: $secondaryLightColor;
+}
+@media only screen and (max-width: 800px) {
+.cards{
+    @include Flex($wrap: wrap)
+}
+.youtube-video {  
+    padding: 0;
+}
+.heading-feature {
+    padding: 0;
+}
+}
+@media only screen and (max-width: 500px) {
+    .heading-feature {
+        font-size: $bigSize4;
+    }
+}

@@ -1,0 +1,37 @@
+#testimonial{
+    background-color: $darkMainColor;
+    width: 100%;
+    padding: 60px 0 30px 0;
+    margin-top: 120px;
+    .container{
+        @include Flex($flex-direction: column, $align: flex-start)
+    }
+}
+.testimonial-heading{
+    font-size: $bigSize3;
+    color: $textColorLight;
+}
+.clients{
+    @include Flex($align: center);
+    margin-top: 20px;
+}
+.client-name{
+    color: $textColorLight;
+    font-weight: 600;
+    font-size: $smallSize;
+    margin-bottom: 5px;
+}
+.client-adjective{
+    color: #8F85B2;
+    font-size: $superSmallSize;
+}
+.client-info{
+    margin-left: 10px;
+}
+@media only screen and (max-width: 500px) {
+.testimonial-heading {
+        font-size: $bigSize4;
+        color: $textColorLight;
+    }
+
+}

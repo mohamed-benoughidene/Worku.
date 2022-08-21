@@ -1,0 +1,33 @@
+#footer{
+    width: 100%;
+    height: 100%;
+    background-color: $secondaryDarkColor;
+height: 40px;
+padding: 40px;
+
+.container{
+    height: 100%;
+    @include Flex($justify: space-between);
+}
+
+p{
+    color: $textColorLight;
+    font-size: $smallSize;
+}
+}
+@media only screen and (max-width: 800px) {
+#footer {
+       
+
+        .container {
+            @include Flex($flex-direction: column);
+       
+          gap: 10px;
+        
+        }
+        p{
+            text-align: center;
+        }
+    }
+   
+}

@@ -1,0 +1,56 @@
+#Hero{
+    background-color: $darkMainColor;
+  
+height: 690px;
+   padding-top: 130px;
+    .btn{
+        padding: 14px 20px;
+margin-top: 10px;
+display: inline-block;
+    }
+   
+}
+.heading-hero{
+    font-size: $bigSize1;
+    color: $textColorLight;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    max-width: 744px;
+}
+.paragraph-hero{
+    
+    font-size: $superSmallSize;
+    color: $textColorLight;
+margin-bottom: 20px;
+word-wrap: break-word;
+    max-width: 440px;
+}
+.hero-img{
+   width: 40%;
+margin-top: 40px;
+   max-width: 400px;
+
+}
+@media only screen and (max-width: 800px) {
+#Hero {
+    height: 100%;
+    padding-bottom: 30px;
+.container{
+    @include Flex($wrap:wrap)
+    
+}
+}
+.content-hero{
+    order: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.hero-img {
+    width: 50%;
+    max-width: 400px;
+margin-top: none;
+}
+}

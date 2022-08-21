@@ -1,0 +1,53 @@
+#contact{
+    padding-top: 50px;
+    .container{
+        width: 100%;
+      @include Flex;
+      
+    }
+   
+    .btn{
+        margin-top: 20px;
+        padding: 14px 32px;
+
+    }
+}
+.contact-heading{
+    font-size: $bigSize4;
+    margin-bottom: 15px;
+}
+.contact-paragraph{
+font-size: $superSmallSize;
+margin-bottom: 20px;
+line-height: 25px;
+}
+.form{
+@include Flex($flex-direction: column, $align: flex-start);
+   padding-right: 30px;
+}
+.contact-img{
+    width: 50%;
+}
+.swal2-styled.swal2-confirm {
+   
+    background-color: $highlightColor !important;
+    color: $textColorDark !important;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 840px) {
+#contact {
+ .container {
+            @include Flex($flex-direction: column);
+        }
+.form {
+  order: 1;
+}
+       
+.contact-img {
+    width: 80%;
+}
+    }
+  
+}

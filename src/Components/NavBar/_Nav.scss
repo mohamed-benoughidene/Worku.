@@ -1,0 +1,111 @@
+#navBar{
+    height: 74px;
+    background-color: $darkMainColor;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+.container{
+    @include Flex($justify: space-between);
+        height: 100%;
+        width: 100%;
+        text-transform: capitalize;
+}
+.btn {
+    background-color: $lightMainColor;
+    color: $textColorDark;
+    padding: 12px 25px;
+}
+.btn:hover {
+    background-color: $highlightColor;
+}
+}
+.nav {
+    width: 38%;
+    max-width: 500px;
+    @include Flex($justify: space-between);
+}
+.logo, .nav-link{
+    color: $textColorLight;
+}
+.logo{
+    font-family: $headingFont;
+    font-weight: 400;
+    font-size: $smallSize;
+    z-index: 99;
+}
+.nav-link{
+    position: relative;
+    font-weight: normal;
+    font-size: $smallSize;
+    padding: 5px;
+}
+.nav-link::after{
+    content: "";
+    position: absolute;
+    bottom: -22px;
+    right: 0;
+    width: 0;
+    background-color: $highlightColor;
+    height: 4px;
+   transition: all 0.2s ease-out;
+}
+.nav-link:hover::after{
+width: 100%;
+}
+.nav-btn{
+    background-color: transparent;
+   border: none;
+   font-size: 25px;
+   color: $textColorLight;
+   cursor: pointer;
+   outline: none;
+   padding: 10px;
+display: none;
+transition: all 0.1s ease-out;
+}
+.nav-btn:hover{
+    color: $highlightColor;
+}
+
+@media only screen and (max-width: 900px) {
+    .nav-btn {
+            display: initial;
+        }
+        .nav{
+            position: fixed;
+            top: -100%;
+            left: 0;
+          max-width: initial;
+            height: 100%;
+            width: 100%;
+            @include Flex($flex-direction: column);
+            gap: 50px;
+            background-color: $darkMainColor;
+            transition: 0.5s;
+           
+        }
+        .toggle-nav{
+           top: 0;
+        }
+        .nav-close-btn{
+            position: absolute;
+            top: 18px;
+            right: 18px;
+        }
+                .nav-link::after {
+                    content: "";
+                    position: absolute;
+                    bottom: -10px;
+                    right: 0;
+                    width: 0;
+                    background-color: $highlightColor;
+                    height: 4px;
+                    transition: all 0.2s ease-out;
+                }
+
+                        #navBar{
+.btn {
+        padding: 12px 70px;
+    }
+                        }        
+}
