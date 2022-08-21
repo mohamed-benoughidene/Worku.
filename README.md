@@ -8,8 +8,7 @@ This is a solution to the [Worku. - Landing Page UI](https://www.figma.com/commu
   - [Screenshot](#screenshot)
   - [Links](#links)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-- [Author](#author)
+  - [Author](#author)
 
 ## Overview
 
