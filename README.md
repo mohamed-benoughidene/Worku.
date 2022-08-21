@@ -1,4 +1,4 @@
-# Frontend Mentor - Advice generator app solution
+# Worku. - Landing Page UI solution.
 
 This is a solution to the [Worku. - Landing Page UI](https://www.figma.com/community/file/1119570033612610010).
 
